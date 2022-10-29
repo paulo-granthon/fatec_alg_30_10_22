@@ -1,6 +1,4 @@
 
-
-
 N = None
 while N is None or N < 50:
     N = int(input("Informe o valor de N (≥ 50): "))
@@ -26,8 +24,7 @@ for num in range(1, N + 1):
         else:
             prime = x
         x += 1
-    # print(f'[{num}] found prime: {prime}')
     P += prime / (((num * 2) - 1) ** 3)
-    print(f'N: {num}  \t| H: {H}  \t| S: {S}  \t| P: {P}')
+print(f'N: {N}  \t| H: {H}  \t| S: {S}  \t| P: {P}')
 
 
