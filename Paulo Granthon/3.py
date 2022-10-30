@@ -14,4 +14,3 @@ while A < C * 1.23:
     C += C*pC
     a += 1
 print(f'A excede C em 23% em {a} anos')
-
