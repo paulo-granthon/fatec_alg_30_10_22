@@ -3,13 +3,12 @@ from random import randint
 nums = [randint(0, 9) for _ in range(150)]
 
 
-
 # Resolução oficial da atividade utilizando if, else e for
 count_A, sum_A, max_count_A, max_sum_A = 0, 0, 0, 0
 count_B, val_B, max_count_B, max_val_B = 0, 0, 0, 0
 prev = None
 for num in nums:
-    if prev == None or num != prev + 1:
+    if prev is None or num != prev + 1:
         count_A = 1
         sum_A = num
     else:
